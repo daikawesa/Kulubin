@@ -1,0 +1,336 @@
+/* ===========================================
+   KULUBIN LINKTREE
+=========================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+:root{
+
+    --green:#667128;
+    --green-dark:#4A521D;
+    --purple:#8F2E72;
+    --purple-dark:#6B2256;
+    --yellow:#E7B53A;
+
+    --cream:#FFF7EE;
+    --white:#FFFFFF;
+
+    --text:#454038;
+    --text-light:#7B756A;
+
+    --shadow:
+    0 20px 40px rgba(0,0,0,.08);
+
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+
+    font-family:'Poppins',sans-serif;
+
+    background:
+    radial-gradient(circle at top,
+    #FFFDF8,
+    var(--cream));
+
+    min-height:100vh;
+
+    color:var(--text);
+
+}
+
+/* Decorative Background */
+
+body::before{
+
+    content:"";
+
+    position:fixed;
+
+    inset:0;
+
+    background-image:
+
+    radial-gradient(#D9CFBE 1px,transparent 1px);
+
+    background-size:26px 26px;
+
+    opacity:.18;
+
+    z-index:-2;
+
+}
+
+body::after{
+
+    content:"";
+
+    position:fixed;
+
+    width:350px;
+    height:350px;
+
+    background:#FFF0B8;
+
+    border-radius:50%;
+
+    top:-150px;
+    right:-120px;
+
+    filter:blur(40px);
+
+    z-index:-1;
+
+}
+
+/* ========================= */
+
+.container{
+
+    max-width:420px;
+
+    margin:auto;
+
+    padding:40px 22px 60px;
+
+}
+
+/* ========================= */
+
+.profile{
+
+    text-align:center;
+
+    margin-bottom:35px;
+
+}
+
+.avatar{
+
+    width:130px;
+    height:130px;
+
+    border-radius:50%;
+
+    object-fit:cover;
+
+    border:6px solid white;
+
+    box-shadow:var(--shadow);
+
+    background:white;
+}
+
+.brand{
+
+    margin-top:20px;
+
+    font-size:2.4rem;
+
+    font-weight:800;
+
+    color:var(--green);
+
+    letter-spacing:-1px;
+
+}
+
+.tagline{
+
+    color:var(--purple);
+
+    font-size:1rem;
+
+    font-weight:600;
+
+}
+
+.description{
+
+    margin-top:12px;
+
+    color:var(--text-light);
+
+    line-height:1.7;
+
+}
+
+/* ========================= */
+
+.link-btn{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:14px;
+
+    width:100%;
+
+    height:64px;
+
+    border-radius:18px;
+
+    margin-bottom:18px;
+
+    text-decoration:none;
+
+    font-weight:700;
+
+    font-size:1.05rem;
+
+    transition:.25s;
+
+    box-shadow:var(--shadow);
+
+}
+
+/* WhatsApp */
+
+.whatsapp{
+
+    background:var(--green);
+
+    color:white;
+
+}
+
+.whatsapp:hover{
+
+    background:var(--green-dark);
+
+    transform:translateY(-4px);
+
+}
+
+/* Instagram */
+
+.instagram{
+
+    background:var(--purple);
+
+    color:white;
+
+}
+
+.instagram:hover{
+
+    background:var(--purple-dark);
+
+    transform:translateY(-4px);
+
+}
+
+/* TikTok */
+
+.tiktok{
+
+    background:#2B2B2B;
+
+    color:white;
+
+}
+
+.tiktok:hover{
+
+    background:#111;
+
+    transform:translateY(-4px);
+
+}
+
+/* ========================= */
+
+.info-card{
+
+    margin-top:35px;
+
+    background:white;
+
+    border-radius:22px;
+
+    padding:22px;
+
+    text-align:center;
+
+    box-shadow:var(--shadow);
+
+}
+
+.info-card h5{
+
+    color:var(--green);
+
+    font-weight:700;
+
+}
+
+.info-card p{
+
+    margin-top:10px;
+
+    color:var(--text-light);
+
+    line-height:1.7;
+
+}
+
+/* ========================= */
+
+.footer{
+
+    margin-top:35px;
+
+    text-align:center;
+
+    color:#988F84;
+
+    font-size:.85rem;
+
+}
+
+/* ========================= */
+
+.icon{
+
+    font-size:1.35rem;
+
+}
+
+/* ========================= */
+
+@media(max-width:480px){
+
+.container{
+
+    padding:30px 18px 50px;
+
+}
+
+.brand{
+
+    font-size:2rem;
+
+}
+
+.avatar{
+
+    width:110px;
+    height:110px;
+
+}
+
+.link-btn{
+
+    height:60px;
+
+}
+
+}
